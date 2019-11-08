@@ -3,13 +3,13 @@ project(webAssembly C)
 ##打印编译日志
 set(CMAKE_VERBOSE_MAKEFILE ON)
 ##设置编译器
-set(CMAKE_C_COMPILER  /Users/oyo/emsdk/upstream/emscripten/emcc)
+set(CMAKE_C_COMPILER  /usr/local/emsdk/upstream/emscripten/emcc)
 MESSAGE(STATUS "CMAKE_C_COMPILER:${CMAKE_C_COMPILER}")
 ##添加编译器参数
 set(CMAKE_C_FLAGS  "-s WASM=1 -O3")
 MESSAGE(STATUS "CMAKE_C_FLAGS:${CMAKE_C_FLAGS}")
 ##包含emscripten头文件
-include_directories(/Users/oyo/emsdk/upstream/emscripten/system/include)
+include_directories( /usr/local/emsdk/upstream/emscripten/system/include)
 ##设置生成文件后缀
 set(CMAKE_EXECUTABLE_SUFFIX  ".js")
 ##生成目标文件
