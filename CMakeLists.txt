@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.10)
 project(webAssembly C)
 ##打印编译日志
 set(CMAKE_VERBOSE_MAKEFILE ON)
 ##设置编译器
-set(CMAKE_C_COMPILER  /usr/local/emsdk/upstream/emscripten/emcc)
+set(CMAKE_C_COMPILER  /home/oct/emsdk/upstream/emscripten/emcc)
 MESSAGE(STATUS "CMAKE_C_COMPILER:${CMAKE_C_COMPILER}")
 ##添加编译器参数
 set(CMAKE_C_FLAGS  "-s WASM=1 -O3")
